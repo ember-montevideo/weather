@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmWeather</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/em-weather.css">
+  </head>
+  <body>
+    <script>
+      window.EmWeatherENV = {{ENV}};
+      window.EmberENV = window.EmWeatherENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/em-weather.js"></script>
+    <script>
+      window.EmWeather = require('em-weather/app')['default'].create(EmWeatherENV.APP);
+    </script>
+  </body>
+</html>
