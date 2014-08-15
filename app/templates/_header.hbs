@@ -3,7 +3,7 @@
 <nav>
   <ul>
     {{#each}}
-      <li><a href="#">{{name}}</a></li>
+      <li>{{#link-to "city" id}}{{name}}{{/link-to}}</li>
     {{else}}
       <li>Nothing here</li>
     {{/each}}
