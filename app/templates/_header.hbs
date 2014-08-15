@@ -1,1 +1,11 @@
 <h2>Weather conditions</h2>
+
+<nav>
+  <ul>
+    {{#each}}
+      <li><a href="#">{{name}}</a></li>
+    {{else}}
+      <li>Nothing here</li>
+    {{/each}}
+  </ul>
+</nav>
