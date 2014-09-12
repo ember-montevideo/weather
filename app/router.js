@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('city', { path: 'cities/:id' });
+  this.resource('city', { path: 'cities/:city_id' });
 });
 
 export default Router;
