@@ -7,20 +7,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{BASE_TAG}}
+    {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/em-weather.css">
   </head>
   <body>
-    <script>
-      window.EmWeatherENV = {{ENV}};
-      window.EmberENV = window.EmWeatherENV.EmberENV;
-    </script>
+    {{content-for 'body'}}
+
     <script src="assets/vendor.js"></script>
     <script src="assets/em-weather.js"></script>
-    <script>
-      window.EmWeather = require('em-weather/app')['default'].create(EmWeatherENV.APP);
-    </script>
   </body>
 </html>

@@ -1,10 +1,10 @@
 {
-  "predef": {
-    "$": true,
-    "document": true,
-    "window": true,
-    "EmWeatherENV": true
-  },
+  "predef": [
+    "$",
+    "document",
+    "window",
+    "-Promise"
+  ],
   "browser" : true,
   "boss" : true,
   "curly": true,
